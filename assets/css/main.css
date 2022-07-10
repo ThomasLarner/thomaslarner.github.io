@@ -1,0 +1,233 @@
+/*Global*/
+:root {
+    --accent: #972177;
+    --darkpurple: #3A234D;
+    --chartblue: #EAF3FF;
+    --backgroundgrey: #F0EFF0;
+
+}
+
+body {
+    margin: 0;
+    font-size: 24px;
+}
+
+.underscore {
+    height: .3em;
+    width: 3.5em;
+    background-color: var(--accent);
+}
+
+.accentbox {
+    padding: 20px;
+    background-color: var(--chartblue);
+}
+@media screen and (max-width: 1000px) {
+    .accentbox {
+        padding: 35px;
+    }
+}
+
+/*Dropcap*/
+.dropcap {
+    color: var(--accent);
+    float: left;
+    font-family: Georgia;
+    font-size: 70px;
+    line-height: 60px;
+    padding-top: 1px;
+    padding-right: 8px;
+}
+  
+/*End marker*/
+.fin {
+    color: var(--accent);
+}
+
+/*For line only on desktop*/
+.hr_hide {
+    margin-bottom: 20px;
+    margin-left: 35px;
+    width: calc(100% - 70px);
+}
+@media screen and (max-width: 1000px) {
+    .hr_hide {
+        display: none;
+    }
+}
+
+/*Header and footer*/
+.header {    
+    background: var(--darkpurple)
+}
+.header_content {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header_text {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-weight: 500;
+    line-height: 1.2em;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.4em;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+.header_bottom {
+    background: var(--accent);
+    padding: 10px;
+}
+.header_text_disappear {
+    display: inline;
+}
+@media screen and (max-width: 420px) {
+    .header_text_disappear {
+        display: none;
+    }
+}
+.header_text_appear {
+    display: none;
+}
+@media screen and (max-width: 420px) {
+    .header_text_appear {
+        display: inline;
+    }
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 48;
+    float: right;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tickertape {
+    color: grey;
+    text-decoration: none;
+    float: right;
+    margin-right: 35px;
+    font-size: small;
+}
+.footer {
+    margin-top: 10%;
+    padding: 15px;
+    padding-bottom: 4%;
+    bottom: 0;
+    width: calc(100%- 30px);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*Middle text column*/
+.middle_text_column {
+        left: 0%;
+        margin-left: 25%;
+        margin-right: 25%;
+}
+@media screen and (max-width: 1000px) {
+    .middle_text_column {
+        left: 0%;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+/*Homepage columns*/
+/*Featured articles*/
+.leftcolumn {
+    float: left;
+    width: calc((100% - 140px)/2);
+    padding-left: 35px;
+}
+.middlecolumn {
+    float: left;
+    width: calc((100% - 140px)/4);
+    padding-left: 35px;
+}
+.rightcolumn {
+    float: left;
+    width: calc((100% - 140px)/4);
+    padding-left: 35px;
+}
+@media screen and (max-width: 1000px) {
+    .leftcolumn, .middlecolumn {
+      width: calc(100% - 70px);
+      padding-left: 35px;
+    }
+    .rightcolumn {
+      width: calc(100%);
+      padding-left: 0;
+    }
+}
+
+/*End of a column*/
+.row {
+    margin-top: 35px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1000px) {
+    .row {
+        margin-top: 0px;
+    }
+}
+
+/*Homepage fonts*/
+.home_image {
+    width: 100%;
+    margin-left: 0px;
+}
+@media screen and (max-width: 1000px) {
+    .home_image {
+        margin-left: -35px;
+        width: calc(100% + 70px);
+    }
+}
+.home_title {
+    font-weight: 100;
+    color: black;
+}
+.home_description {
+    margin-top: -1%;
+    color:grey;
+    font-size: 85%;
+}
+.home_timestamp {
+    color:grey;
+    font-size: 75%;
+    margin-bottom: 3rem;
+}
+.link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    display: block;
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 48;
+    float: right;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
