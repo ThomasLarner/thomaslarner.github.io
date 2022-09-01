@@ -1,11 +1,10 @@
 /*Global*/
 :root {
-    font-family: Georgia;
     --accent: #972177;
     --darkpurple: #3A234D;
     --chartblue: #EAF3FF;
     --backgroundgrey: #F0EFF0;
-    --accentfont: Gill Sans;
+    --accentfont: 'Gill Sans MT', sans-serif;
     --buttonborder: #3079ED;
     --buttonfill: #5493DE;
     --boxbordercolor: #DFE1E5;
