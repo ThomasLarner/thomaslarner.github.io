@@ -178,7 +178,7 @@ body {
     padding-bottom: 50px;
     bottom: 0px;
     width: calc(100%- 30px);
-    background-color: black;
+    background-color: #202020;
     color: white;
     text-align: center;
     font-family: var(--accentfont);
