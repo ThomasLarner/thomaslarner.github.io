@@ -16,6 +16,11 @@ body {
     max-width: 2200px;
 }
 
+.mainbody {
+    min-height: calc(100vh - 112px);
+    margin-bottom: 35px;
+}
+
 .accentline {
     height: .3em;
     width: 3.5em;
@@ -133,7 +138,6 @@ body {
     margin-left: 35px;
     margin-right: 35px;
     font-weight: 500;
-    line-height: 1.2em;
     font-style: normal;
     letter-spacing: 0em;
     text-transform: none;
@@ -169,9 +173,8 @@ body {
 }
 
 .footer {
-
     padding: 15px;
-    padding-bottom: 4%;
+    padding-bottom: 50px;
     bottom: 0px;
     width: calc(100%- 30px);
     background-color: black;
@@ -282,9 +285,11 @@ body {
     .home_title {
         text-align: center;
     }
+
     .home_description {
         text-align: center;
     }
+
     .home_timestamp {
         text-align: center;
     }
@@ -308,7 +313,7 @@ body {
         'opsz' 48;
 }
 
-.cards_margin{
+.cards_margin {
     margin-left: 35px;
     margin-right: 35px;
     margin-bottom: 35px;
@@ -478,4 +483,12 @@ body {
     width: 100%;
     background-color: var(--chartblue);
     text-align: center;
+}
+
+.page_description_2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: grey;
+    font-size: 70%;
+    font-family: var(--accentfont);
 }
