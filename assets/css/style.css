@@ -308,11 +308,17 @@ body {
         'opsz' 48;
 }
 
-.cards {
-    margin-top: 35px;
+.cards_margin{
     margin-left: 35px;
     margin-right: 35px;
     margin-bottom: 35px;
+}
+
+.cards {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     display: grid;
     gap: 35px;
 }
