@@ -51,6 +51,7 @@ body {
 
 .adbox {
     float: left;
+    margin-top: 35px;
     padding: 20px;
     background-color: var(--backgroundgrey);
     margin-left: 35px;
@@ -171,17 +172,6 @@ body {
     .header_text_disappear {
         display: none;
     }
-}
-
-.footer {
-    padding: 15px;
-    padding-bottom: 50px;
-    bottom: 0px;
-    width: calc(100%- 30px);
-    background-color: #202020;
-    color: white;
-    text-align: center;
-    font-family: var(--accentfont);
 }
 
 /*Middle text column*/
@@ -492,4 +482,26 @@ body {
     color: grey;
     font-size: 70%;
     font-family: var(--accentfont);
+}
+
+
+.cookietable {
+    font-family: var(--accentfont);
+    font-size: 90%;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.cookietable, .cookieth, .cookietd {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+.cookieth, .cookietd {
+    text-align: left;
+    background-color: var(--chartblue);
+    padding: 10px;
 }
