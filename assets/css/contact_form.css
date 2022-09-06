@@ -34,7 +34,7 @@ textarea:focus::placeholder {
     color: transparent;
 }
 
-button {
+.contact_button {
     float: right;
     font-size: 1.2rem;
     font-family: var(--accentfont);
