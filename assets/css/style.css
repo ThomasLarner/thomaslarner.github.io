@@ -144,10 +144,7 @@ body {
         'wght' 400,
         'GRAD' 200,
         'opsz' 48;
-    float: right;
-    margin-right: 0px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    display: inline;
 }
 
 /*Dropcap*/
@@ -212,6 +209,16 @@ body {
 @media screen and (max-width: 420px) {
     .header_text_disappear {
         display: none;
+    }
+}
+
+.header_text_appear {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .header_text_appear {
+        display: inline;
     }
 }
 

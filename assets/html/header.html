@@ -13,18 +13,32 @@
     <div class="header">
         <div class="header_content">
             <div class="header_text">
-                <a href="/" style="text-decoration: none; color: white;">T<span class="header_text_disappear">homas
-                    </span>L<span class="header_text_disappear">arner</span></a>
-                <button onclick="menuFunction()" id="menuBtn" class="menu_button">
-                    <span class="material-symbols-outlined">
-                        menu
+                <div style="float: right;">
+                    <button onclick="menuFunction()" id="menuBtn" class="menu_button">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </button>
+                    <span class="header_text_disappear">
+                        <span class="material-symbols-outlined">
+                            <a href="/search"
+                                style="text-decoration: none; color: white; margin-right: 20px; margin-top: 15px; margin-bottom: 15px;">
+                                search
+                            </a>
+                        </span>
                     </span>
-                </button>
-                <span class="material-symbols-outlined">
-                    <a href="/search" style="text-decoration: none; color: white; margin-right: 20px;">
-                        search
-                    </a>
-                </span>
+                </div>
+                <a href="/" style="text-decoration: none; color: white;">
+                    Thomas
+                    <span class="header_text_disappear">
+                        Larner
+                    </span>
+                    <br>
+                    <span class="header_text_appear">
+                        Larner
+                    </span>
+                </a>
+
             </div>
         </div>
         <div class="header_bottom">
@@ -38,6 +52,14 @@
                     <a href="/research" class="header_bottom_text">Research</a>
                     <br>
                     <a href="/blog" class="header_bottom_text">Blog</a>
+                    <span class="header_text_appear">
+                        <br>
+                        <span class="material-symbols-outlined" style="margin-top: .5em;">
+                            <a href="/search" style="text-decoration: none; color: white; margin-top: -20px;">
+                                search
+                            </a>
+                        </span>
+                    </span>
                     <br>
                 </span>
             </p>
