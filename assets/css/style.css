@@ -660,3 +660,38 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+.filter_btn {
+    border: 2px solid grey;
+    font: var(--accentfont);
+    background-color: white;
+    border-radius: .65em;
+    font-size: .8em;
+    padding: .25em;
+}
+
+.filter_div {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
+
+.fade_bottom {
+    border   : 1px #d8d8d8 dashed;
+    position : relative;
+    border: none;
+  }
+  
+.fade_bottom:after {
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    bottom   : 0;
+    left     : 0;
+    pointer-events   : none;
+    background-image : linear-gradient(to bottom, 
+                      rgba(255,255,255, 0), 
+                      rgba(255,255,255, 1) 90%);
+    width    : 100%;
+    height   : 200px;
+  }
