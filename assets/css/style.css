@@ -82,6 +82,24 @@ body {
 
 }
 
+.research_cards {
+    float: left;
+    padding: 20px;
+    background-color: var(white);
+    margin-left: 35px;
+    width: calc(100% - 70px - 40px);
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .research_cards {
+        padding: 35px;
+        margin-left: 0px;
+        width: calc(100% - 70px);
+    }
+
+}
+
 .research_ad_img {
     float: left;
     width: 25%;
@@ -97,8 +115,17 @@ body {
 
 @media screen and (max-width: 800px) {
     .research_ad_img {
+        text-align: center;
         width: 100%;
         max-width: 500px;
+        margin-left: calc((100% - 500px) / 2);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .research_ad_img {
+        text-align: center;
+        width: 100%;
         margin-left: 0;
     }
 }
@@ -471,12 +498,16 @@ body {
     display: flex;
     flex-direction: row;
     gap: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @media screen and (max-width: 800px) {
     .research_page_layout {
         flex-direction: column;
-        width: 100%
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -502,6 +533,14 @@ body {
 @media screen and (max-width: 800px) {
     .research_page_layout_img {
         max-width: 500px;
+        margin-left: calc((100% - 500px)/ 2);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .research_page_layout_img {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
