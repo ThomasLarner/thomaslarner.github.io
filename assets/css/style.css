@@ -694,4 +694,19 @@ body {
                       rgba(255,255,255, 1) 90%);
     width    : 100%;
     height   : 200px;
-  }
+}
+
+.full_width_chart_mobile {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .full_width_chart_mobile {
+        width: 200%;
+    }
+}
+
+.full_width_chart_container_mobile {
+    width: 100%;
+    overflow-x: auto;
+}
