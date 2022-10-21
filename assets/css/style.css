@@ -346,11 +346,12 @@ body {
 
 .colour_link {
     text-decoration: underline;
-    color: var(--accent);
+    text-decoration-color: var(--accent);
+    color: black;
 }
 
 .colour_link:hover {
-    font-weight: bolder;
+    color: var(--accent);
 }
 
 .material-symbols-outlined {
