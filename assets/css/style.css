@@ -18,6 +18,12 @@ body {
     max-width: 2200px;
 }
 
+.blog_main {
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
 .read_here_button {
     float: left;
     font-size: 1.2rem;
@@ -153,7 +159,7 @@ body {
     float: left;
     font-family: Georgia;
     font-size: 70px;
-    line-height: 60px;
+    line-height: 65px;
     padding-right: 8px;
     margin-bottom: -6px;
 }
@@ -341,7 +347,16 @@ body {
 
 .link:hover {
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
+}
+
+.colour_link {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.colour_link:hover {
+    font-weight: bolder;
 }
 
 .material-symbols-outlined {
