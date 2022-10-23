@@ -25,3 +25,10 @@ fetch('/articles/old-cards.html')
 .then(data=>{
     old_articles.innerHTML=data
 })
+
+const chart = document.querySelector('.uncharted_cards')
+fetch('/uncharted/cards.html')
+.then(res=>res.text())
+.then(data=>{
+    chart.innerHTML=data
+})

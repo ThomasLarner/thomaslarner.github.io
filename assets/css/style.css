@@ -638,42 +638,6 @@ body {
     padding: 10px;
 }
 
-.cookie-container {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    font-size: 70%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: var(--darkgrey);
-    color: var(--backgroundgrey);
-    padding: 35px;
-}
-
-@media screen and (max-width: 800px) {
-    .cookie-container {
-        flex-direction: column;
-    }
-}
-
-.cookie-container a {
-    color: var(--backgroundgrey);
-}
-
-.cookie-btn {
-    float: right;
-    font-family: var(--accentfont);
-    background-color: var(--buttonfill);
-    border: 1px solid var(--buttonborder);
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .filter_btn {
     border: 2px solid grey;
     font: var(--accentfont);
