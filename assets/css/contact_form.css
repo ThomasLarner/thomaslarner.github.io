@@ -1,3 +1,13 @@
+:root {
+    --c_margin: 35px;
+}
+
+@media screen and (max-width: 450px) {
+    :root {
+        --c_margin: 20px;
+    }
+}
+
 input {
     font-size: 1.2rem;
     font-family: var(--accentfont);
@@ -60,4 +70,9 @@ textarea:focus::placeholder {
         margin-left: 0px;
         margin-right: 0px;
     }
+}
+
+.contact_page_div {
+    margin-left: var(--c_margin);
+    margin-right: var(--c_margin);
 }

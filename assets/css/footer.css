@@ -9,14 +9,22 @@
     --boxbordercolor: #DFE1E5;
     --warningred: #962321;
     --darkgrey: #202020;
+    --margin: 35px;
 }
 
+@media screen and (max-width: 450px) {
+    :root {
+        --margin: 20px;
+    }
+}
+
+
 footer {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: var(--margin);
+    padding-right: var(--margin);
     padding-top: 15px;
     bottom: 0px;
-    width: calc(100%- 30px);
+    width: calc(100% - (2 * (var(--margin))));
     background-color: var(--darkgrey);
     color: white;
     font-family: var(--accentfont);
@@ -38,10 +46,10 @@ footer a:hover {
     display: block;
     text-align: right;
     margin-top: 15px;
-    margin-left: -35px;
+    margin-left: calc(0 - (var(--margin)));
     width: 100%;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 15px;
     color: grey;
     font-size: 80%;
