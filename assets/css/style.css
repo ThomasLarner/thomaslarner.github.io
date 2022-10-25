@@ -598,7 +598,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .chart_animation_full_width {
-        width: calc(100% - 70px);
+        width: calc(100% - (2 * (var(--margin))));
         margin-left: var(--margin);
         margin-right: var(--margin);
     }
@@ -609,8 +609,8 @@ body {
     width: 100%;
     background-color: var(--chartblue);
     text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: var(--margin);
+    padding-bottom: var(--margin);
 }
 
 
