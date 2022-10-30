@@ -698,3 +698,30 @@ body {
     padding-left: var(--margin);
     padding-right: var(--margin);
 }
+
+.full_width_chart_mobile {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .full_width_chart_mobile {
+        display: inline;
+        width: 44%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .full_width_chart_mobile {
+        display: inline;
+        width: calc(100% - (2 * (var(--margin))));
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+    }
+}
+.full_width_chart_desktop {
+    display: inline;
+    width: 44%;
+}
+@media screen and (max-width: 1200px) {
+    .full_width_chart_desktop {
+        display: none;
+    }
+}
