@@ -679,12 +679,12 @@ body {
     height   : 200px;
 }
 
-.full_width_chart_mobile {
+.full_width_chart_mobile_1 {
     width: 100%;
 }
 
 @media screen and (max-width: 800px) {
-    .full_width_chart_mobile {
+    .full_width_chart_mobile_1 {
         width: 200%;
     }
 }
