@@ -1,15 +1,21 @@
+const article_database = document.querySelector('.article_database')
+fetch('/database/article_database.html')
+.then(res=>res.text())
+.then(data=>{
+    article_database.innerHTML=data
+})
+const article_database2 = document.querySelector('.article_database2')
+fetch('/database/article_database.html')
+.then(res=>res.text())
+.then(data=>{
+    article_database2.innerHTML=data
+})
+
 const econ = document.querySelector('.economics_column_cards')
 fetch('/economics-column/cards.html')
 .then(res=>res.text())
 .then(data=>{
     econ.innerHTML=data
-})
-
-const old_articles = document.querySelector('.old_articles')
-fetch('/articles/old-cards.html')
-.then(res=>res.text())
-.then(data=>{
-    old_articles.innerHTML=data
 })
 
 const chart = document.querySelector('.uncharted_cards')
