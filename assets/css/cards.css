@@ -199,3 +199,39 @@
     display: none;
 }
 */
+
+/*-------------------- Economics Column page filters --------------------*/
+
+.ec_cards {
+    margin-top: 35px;
+}
+
+.ec_cards div.card#uc{
+    display: none;
+}
+
+.ec_cards div.card#ec{
+    display: block;
+}
+
+.ec_cards p.home_type{
+    display: none;
+}
+
+/*-------------------- Uncharted page filters --------------------*/
+
+.uc_cards {
+    margin-top: 35px;
+}
+
+.uc_cards div.card#ec{
+    display: none;
+}
+
+.uc_cards div.card#uc{
+    display: block;
+}
+
+.uc_cards p.home_type{
+    display: none;
+}
