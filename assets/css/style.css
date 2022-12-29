@@ -604,21 +604,6 @@ body {
     padding: 10px;
 }
 
-.filter_btn {
-    border: 2px solid grey;
-    font: var(--accentfont);
-    background-color: white;
-    border-radius: .65em;
-    font-size: .8em;
-    padding: .25em;
-}
-
-.filter_div {
-    margin-left: var(--margin);
-    margin-right: var(--margin);
-    margin-bottom: 10px;
-}
-
 .full_width_chart_mobile_1 {
     width: 100%;
 }
@@ -664,4 +649,10 @@ body {
     .full_width_chart_desktop {
         display: none;
     }
+}
+
+.ticker_div {
+    height: 43px;
+    overflow-y: hidden;
+    border-bottom: 2px solid #E0E3EB;
 }
