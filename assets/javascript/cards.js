@@ -10,17 +10,3 @@ fetch('/database/article_database.html')
 .then(data=>{
     article_database2.innerHTML=data
 })
-
-const econ = document.querySelector('.economics_column_cards')
-fetch('/economics-column/cards.html')
-.then(res=>res.text())
-.then(data=>{
-    econ.innerHTML=data
-})
-
-const chart = document.querySelector('.uncharted_cards')
-fetch('/uncharted/cards.html')
-.then(res=>res.text())
-.then(data=>{
-    chart.innerHTML=data
-})
