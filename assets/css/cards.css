@@ -22,9 +22,10 @@
     display: block;
 }
 
-.card:hover {
+.card:hover h3{
     color: var(--accent);
     text-decoration: underline;
+    text-decoration-color: var(--accent);
 }
 
 .card_title {

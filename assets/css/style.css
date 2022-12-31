@@ -169,6 +169,12 @@ body {
     gap: var(--margin);
 }
 
+.advert_box1:hover h3 {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+}
+
 .advert_image1 {
     width: 100%;
 }
