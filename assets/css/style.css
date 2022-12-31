@@ -59,6 +59,8 @@ body {
     }
 }
 
+/*Advert old*/
+
 .ad {
     background-color: white;
 }
@@ -148,6 +150,91 @@ body {
         width: 100%;
     }
 }
+
+/*End advert old*/
+/*Advert new*/
+
+.advert_box1 {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
+    height: fit-content;
+    padding-top: var(--margin);
+    padding-bottom: var(--margin);
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+    background-color: var(--backgroundgrey);
+    width: calc(100% - (4*(var(--margin))));
+    display: grid;
+    gap: var(--margin);
+}
+
+.advert_image1 {
+    width: 100%;
+}
+
+@media (max-width: 599px) {
+    .advert_box1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .advert_image_div1 {
+        height: 100%;
+    }
+    .advert_text_div1 h3.home_title {
+        font-size: 26pt;
+    }
+}
+
+@media (min-width: 600px) {
+    .advert_box1 {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-template-rows: 100%;
+        margin-top: var(--margin);
+    }
+    .advert_text_div1 .home_description {
+        margin-bottom: 0px;
+    }
+    .advert_image_div1 {
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+    .advert_text_div1 {
+        grid-column: 2 / 3;
+    }
+    .advert_text_div1 .home_type {
+        text-align: left;
+    }
+    .advert_text_div1 .home_title {
+        text-align: left;
+    }
+    .advert_text_div1 .home_description {
+        text-align: left;
+    }
+}
+
+@media (min-width: 700px) {
+    .advert_text_div1 h3.home_title {
+        font-size: 26pt;
+    }
+}
+
+@media (min-width: 1200px) {
+    .advert_box1 {
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        width: calc(100% - (2*(var(--margin))));
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .advert_image_div1 {
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+    .advert_text_div1 {
+        grid-column: 3 / 4;
+    }
+}/*End advert new*/
 
 /*Google Icons*/
 .material-symbols-outlined {
