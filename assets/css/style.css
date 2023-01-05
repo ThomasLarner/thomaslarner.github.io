@@ -594,7 +594,7 @@ body {
     margin-right: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1350px) {
     .blog_image_float_left {
         float: none;
         width: 100%;
