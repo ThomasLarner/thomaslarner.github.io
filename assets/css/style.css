@@ -184,9 +184,11 @@ body {
     .advert_box1 {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .advert_image_div1 {
         height: 100%;
     }
+
     .advert_text_div1 h3.home_title {
         font-size: 26pt;
     }
@@ -199,22 +201,28 @@ body {
         grid-template-rows: 100%;
         margin-top: var(--margin);
     }
+
     .advert_text_div1 .home_description {
         margin-bottom: 0px;
     }
+
     .advert_image_div1 {
         grid-column: 1 / 2;
         width: 100%;
     }
+
     .advert_text_div1 {
         grid-column: 2 / 3;
     }
+
     .advert_text_div1 .home_type {
         text-align: left;
     }
+
     .advert_text_div1 .home_title {
         text-align: left;
     }
+
     .advert_text_div1 .home_description {
         text-align: left;
     }
@@ -234,14 +242,18 @@ body {
         padding-left: 0px;
         padding-right: 0px;
     }
+
     .advert_image_div1 {
         grid-column: 2 / 3;
         width: 100%;
     }
+
     .advert_text_div1 {
         grid-column: 3 / 4;
     }
-}/*End advert new*/
+}
+
+/*End advert new*/
 
 /*Google Icons*/
 .material-symbols-outlined {
@@ -446,6 +458,7 @@ body {
     .home_timestamp {
         text-align: center;
     }
+
     .home_type {
         text-align: center;
     }
@@ -519,6 +532,20 @@ body {
         left: 0%;
         margin-left: var(--margin);
         margin-right: var(--margin);
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .blog_main p {
+        font-size: smaller;
+    }
+
+    .blog_main p.blog_description {
+        font-size: 100%;
+    }
+
+    .blog_main p.blog_meta_data {
+        font-size: 70%;
     }
 }
 
@@ -600,7 +627,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .research_page_layout_thumbnail, .research_page_layout_abstract{
+
+    .research_page_layout_thumbnail,
+    .research_page_layout_abstract {
         width: 100%;
     }
 }
@@ -687,12 +716,15 @@ body {
     width: 100%;
 }
 
-.cookietable, .cookieth, .cookietd {
+.cookietable,
+.cookieth,
+.cookietd {
     border: 2px solid white;
     border-collapse: collapse;
 }
 
-.cookieth, .cookietd {
+.cookieth,
+.cookietd {
     text-align: left;
     background-color: var(--chartblue);
     padding: 10px;
@@ -721,12 +753,14 @@ body {
 .full_width_chart_mobile {
     display: none;
 }
+
 @media screen and (max-width: 1200px) {
     .full_width_chart_mobile {
         display: inline;
         width: 44%;
     }
 }
+
 @media screen and (max-width: 800px) {
     .full_width_chart_mobile {
         display: inline;
@@ -735,10 +769,12 @@ body {
         margin-right: var(--margin);
     }
 }
+
 .full_width_chart_desktop {
     display: inline;
     width: 44%;
 }
+
 @media screen and (max-width: 1200px) {
     .full_width_chart_desktop {
         display: none;
