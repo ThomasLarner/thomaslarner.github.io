@@ -121,6 +121,9 @@
     .featured_cards .card:nth-child(2) {
         display: block;
     }
+    .featured_cards .card:nth-child(2) .home_timestamp {
+        margin-bottom: 0px;
+    }
 
     .featured_cards .card:nth-child(3) {
         display: block;
@@ -128,6 +131,9 @@
 
     .featured_cards .card:nth-child(3) img {
         display: block;
+    }
+    .featured_cards .card:nth-child(3) .home_timestamp {
+        margin-bottom: 0px;
     }
 }
 
@@ -189,6 +195,9 @@
     .featured_cards .card:nth-child(3) .home_timestamp {
         margin-bottom: 2rem;
     }
+    .featured_cards div.card:first-child .home_timestamp{
+        margin-bottom: 0px;
+    }
     /* ---------------- Advert ----------------
     .featured_cards div.card#nb {
         display: block;
@@ -216,6 +225,7 @@
     }
     .featured_cards div.card:first-child .home_timestamp{
         text-align: center;
+        margin-bottom: 2rem;
     }
 
     .featured_cards .card:nth-child(2) {
@@ -229,6 +239,10 @@
 
     .featured_cards .card:nth-child(2) .home_description {
         display: block;
+    }
+
+    .featured_cards .card:nth-child(2) .home_timestamp {
+        margin-bottom: 2rem;
     }
 
     .featured_cards .card:nth-child(2) .home_type {
