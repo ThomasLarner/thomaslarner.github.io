@@ -140,6 +140,11 @@
 
     .featured_cards .card:nth-child(2) {
         display: block;
+        border-bottom: 2px solid darkgrey;
+    }
+
+    .featured_cards .card:nth-child(2) h3{
+        font-size: 22pt;
     }
 
     .featured_cards .card:nth-child(3) {
@@ -148,6 +153,14 @@
 
     .featured_cards .card:nth-child(3) img {
         display: none;
+    }
+
+    .featured_cards .card:nth-child(3) h3{
+        font-size: 22pt;
+    }
+
+    .featured_cards .card:nth-child(3) .home_timestamp {
+        margin-bottom: 0px;
     }
 }
 
@@ -159,12 +172,22 @@
     }
     .featured_cards .card:nth-child(2) {
         display: block;
+        border-bottom: none;
+    }
+    .featured_cards .card:nth-child(2) h3{
+        font-size: 26pt;
     }
     .featured_cards .card:nth-child(3) {
         display: block;
     }
     .featured_cards .card:nth-child(3) img {
         display: block;
+    }
+    .featured_cards .card:nth-child(3) h3{
+        font-size: 26pt;
+    }
+    .featured_cards .card:nth-child(3) .home_timestamp {
+        margin-bottom: 2rem;
     }
     /* ---------------- Advert ----------------
     .featured_cards div.card#nb {
@@ -177,7 +200,7 @@
 @media (min-width: 1440px) {
     .featured_cards .card:first-child {
         display: block;
-        grid-row: 1 / 2;
+        grid-row: 1 / 3;
         grid-column: 1 / 4;
     }
 
@@ -197,18 +220,35 @@
 
     .featured_cards .card:nth-child(2) {
         display: block;
+        border-bottom: 2px solid darkgrey;
     }
 
     .featured_cards .card:nth-child(2) img {
-        display: block;
+        display: none;
     }
 
     .featured_cards .card:nth-child(2) .home_description {
-        display: none;
+        display: block;
+    }
+
+    .featured_cards .card:nth-child(2) .home_type {
+        margin-top: 0px;
     }
 
     .featured_cards .card:nth-child(3) {
+        display: block;
+    }
+
+    .featured_cards .card:nth-child(3) img {
         display: none;
+    }
+
+    .featured_cards .card:nth-child(3) .home_description {
+        display: block;
+    }
+
+    .featured_cards .card:nth-child(3) .home_timestamp {
+        margin-bottom: 0px;
     }
 
     .featured_cards div.card:first-child a {
@@ -272,11 +312,12 @@
     display: none;
 }
 
+/*
 @media (min-width: 1440px) {
     .more_cards .card:nth-child(3) {
         display: block;
     }
-}
+}*/
 
 .more_cards p.home_description {
     display: none;
