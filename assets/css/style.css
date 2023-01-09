@@ -11,6 +11,7 @@
     --warningred: #962321;
     --darkgrey: #202020;
     --margin: 35px;
+    --bordercolor: darkgrey;
 }
 
 @media screen and (max-width: 450px) {
@@ -24,6 +25,11 @@ body {
     max-width: 2200px;
     margin: 0 auto !important; 
 	float: none !important;
+}
+
+hr {
+    border-style: solid;
+    border-color: var(--bordercolor);
 }
 
 .read_here_button {
