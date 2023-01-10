@@ -366,3 +366,22 @@
 .uc_cards p.home_type {
     display: none;
 }
+
+.uc_cards img#home_type {
+    display: none;
+}
+
+.home_title_wordle {
+    font-weight: 100;
+    text-align: left;
+    color: black;
+    margin-top: 2px;
+}
+
+.uc_cards .home_title_wordle {
+    margin-top: 28.08px;
+}
+
+.home_title_wordle:hover {
+    color: var(--accent);
+}
