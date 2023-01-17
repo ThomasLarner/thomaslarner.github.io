@@ -556,7 +556,8 @@ hr {
 
 /*Header*/
 .header {
-    background: var(--darkpurple)
+    background: var(--darkpurple);
+    margin-top: 21.2px;
 }
 
 .header_content {
@@ -612,6 +613,33 @@ hr {
         display: inline;
     }
 }
+
+.cookiebar {
+    background-color: var(--darkgrey);
+    margin-bottom: 0px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+}
+
+.cookiebar p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    color: var(--backgroundgrey);
+    font-size: .55em;
+    font-family: var(--accentfont);
+    text-align: center;
+}
+
+.cookiebar a {
+    color: var(--backgroundgrey);
+}
+
 /*Header End*/
 
 /*Footer*/
