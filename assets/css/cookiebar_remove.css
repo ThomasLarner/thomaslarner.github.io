@@ -1,3 +1,7 @@
 .header_main .cookiebar {
     display: none;
 }
+
+.header_main .header {
+    margin-top: 0px;
+}
