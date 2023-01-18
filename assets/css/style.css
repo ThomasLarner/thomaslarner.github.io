@@ -11,7 +11,7 @@
     --warningred: #962321;
     --darkgrey: #202020;
     --margin: 35px;
-    --bordercolor: darkgrey;
+    --bordercolor: #E0E3EB;
 }
 
 @media screen and (max-width: 450px) {
@@ -22,10 +22,36 @@
 
 body {
     font-size: 24px;
-    max-width: 2200px;
     margin: 0 auto !important; 
-	float: none !important;
 }
+
+/* max-width 1500px settings*/
+
+@media screen and (min-width: 1570px) {
+    .header_text, .legal, .home_maxwidth {
+        max-width: 1500px;
+        margin: 0 auto !important; 
+	    float: none !important;
+    }
+}
+
+@media screen and (min-width: 1570px) {
+    .ec_cards, .uc_cards, .home_maxwidth {
+        max-width: 1570px;
+        margin: 35px auto !important; 
+	    float: none !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .mainbody, .blog_div, .full_width_chart_div, .blog_header_div {
+        max-width: 1500px;
+        margin: 0 auto !important; 
+	    float: none !important;
+    }
+}
+
+/* max width settings end */
 
 hr {
     border: none;
@@ -102,10 +128,6 @@ hr {
 
     .advert_image_div1 {
         height: 100%;
-    }
-
-    .advert_text_div1 h3.home_title {
-        font-size: 26pt;
     }
 }
 
@@ -313,26 +335,18 @@ hr {
 
 .blog_main {
     left: 0%;
-    margin-left: 28%;
-    margin-right: 28%;
+    margin-left: 25%;
+    margin-right: 25%;
     font-size: 1em;
     line-height: 1.4em;
 
 }
 
-@media screen and (max-width: 1440px) {
-    .blog_main {
-        left: 0%;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
-
 @media screen and (max-width: 1100px) {
     .blog_main {
         left: 0%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 16%;
+        margin-right: 16%;
     }
 }
 
@@ -415,31 +429,11 @@ hr {
     font-family: var(--accentfont);
 }
 
-@media (min-width: 1440px) {
-    .chart_animation_full_width {
-        width: 44%;
-    }
+
+.chart_full_width {
+    width: 100%;
 }
 
-@media (max-width: 1440px) {
-    .chart_animation_full_width {
-        width: 60%;
-    }
-}
-
-@media (max-width: 1100px) {
-    .chart_animation_full_width {
-        width: 70%;
-    }
-}
-
-@media (max-width: 800px) {
-    .chart_animation_full_width {
-        width: calc(100% - (2 * (var(--margin))));
-        margin-left: var(--margin);
-        margin-right: var(--margin);
-    }
-}
 
 .full_width_blue {
     width: 100%;
@@ -458,6 +452,9 @@ hr {
     font-family: var(--accentfont);
 }
 
+.read_more {
+    margin: 2rem 0;
+}
 
 .cookietable {
     font-family: var(--accentfont);
@@ -505,41 +502,18 @@ hr {
 
 .full_width_chart_mobile {
     display: none;
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
     .full_width_chart_mobile {
         display: inline;
-        width: calc(100% - (2 * (var(--margin))));
-        margin-left: var(--margin);
-        margin-right: var(--margin);
     }
 }
 
-@media (min-width: 1440px) {
-    .full_width_chart_desktop {
-        width: 44%;
-    }
-}
-
-@media (max-width: 1440px) {
-    .full_width_chart_desktop {
-        width: 60%;
-    }
-}
-
-@media (max-width: 1100px) {
-    .full_width_chart_desktop {
-        width: 70%;
-    }
-}
-
-@media (max-width: 800px) {
-    .full_width_chart_desktop {
-        width: calc(100% - (2 * (var(--margin))));
-        margin-left: var(--margin);
-        margin-right: var(--margin);
-    }
+.full_width_chart_desktop {
+    width: 100%;
+    display: inline;
 }
 
 @media screen and (max-width: 600px) {
