@@ -453,7 +453,18 @@ hr {
 }
 
 .read_more {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+.read_more h3{
+    margin-top: 1rem;
+}
+
+.read_more_border {
+    margin-top: 2rem;
+    border-top: 2px solid black;
 }
 
 .cookietable {
