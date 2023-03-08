@@ -362,3 +362,9 @@
 .ch_cards img#home_type {
     display: none;
 }
+
+/*-------------------- Search --------------------*/
+
+.search_results div.card {
+    display: none;
+}
