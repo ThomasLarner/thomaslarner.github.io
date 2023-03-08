@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/cards.css" />
     <meta charset="UTF-8">
-    
+
     <link rel="icon" href="/assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 </head>
 
 <body>
@@ -28,19 +28,29 @@
     <!--Header End-->
 
     <div class="mainbody">
-        <div class="middle_text_column">
+        <!--Title-->
+        <div class="page_title">
             <h1 style="text-align: center;">Search</h1>
-            <p class="page_description">Please scroll down to skip past Google's adverts...</p>
-            <script async src="https://cse.google.com/cse.js?cx=c1cf012524e8f46c3">
-            </script>
-            <div class="gcse-search"></div>
+            <input type="text" id="navbar_search_bar" onkeyup="navbar_search_function()"
+                placeholder="Search for article titles, descriptions or publish dates">
         </div>
-    </div>
-    
-    <!--Footer-->
-    <div class="footer_main"></div>
-    <script src="/assets/javascript/footer.js"></script>
-    <!--Footer End-->
+
+        <!--Articles-->
+
+        <div class="search_results">
+            <div class="cards_margin">
+                <div class="article_database"></div>
+                <script src="/assets/javascript/cards.js"></script>
+                <script src="/assets/javascript/search.js"></script>
+            </div>
+        </div>
+
+        <div class="mainbody"></div>
+        
+        <!--Footer-->
+        <div class="footer_main"></div>
+        <script src="/assets/javascript/footer.js"></script>
+        <!--Footer End-->
 </body>
 
 </html>

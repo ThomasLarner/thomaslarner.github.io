@@ -1,19 +1,13 @@
 function navbar_search_function() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('navbar_search_bar');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("article_database_list_format");
-  li = ul.getElementsByTagName('li');
+  var input = document.getElementById("navbar_search_bar");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('card');
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
     } else {
-      li[i].style.display = "none";
+      nodes[i].style.display = "none";
     }
   }
 }

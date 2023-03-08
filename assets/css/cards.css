@@ -325,6 +325,10 @@
     display: none;
 }
 
+.ec_cards div.card#ch {
+    display: none;
+}
+
 .ec_cards div.card#ec {
     display: block;
 }
@@ -333,24 +337,28 @@
     display: none;
 }
 
-/*-------------------- Uncharted page filters --------------------*/
+/*-------------------- Charts page filters --------------------*/
 
-.uc_cards {
+.ch_cards {
     margin-top: 35px;
 }
 
-.uc_cards div.card#ec {
+.ch_cards div.card#ec {
     display: none;
 }
 
-.uc_cards div.card#uc {
+.ch_cards div.card#uc {
+    display: none;
+}
+
+.ch_cards div.card#ch {
     display: block;
 }
 
-.uc_cards p.home_type {
+.ch_cards p.home_type {
     display: none;
 }
 
-.uc_cards img#home_type {
+.ch_cards img#home_type {
     display: none;
 }

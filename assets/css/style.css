@@ -338,9 +338,12 @@ hr {
     text-transform: none;
     line-height: 1.4em;
     font-size: 2.5rem;
-    color: white;
     text-decoration: none;
     cursor: pointer;
+}
+
+#menu_close_btn {
+    display: none;
 }
 
 .blog_div {
@@ -715,4 +718,26 @@ footer a:hover {
     text-decoration: underline;
     color: black;
     margin: calc((-1 * var(--margin)) + 20px) 0px calc((var(--margin)) + 20px);
+}
+
+/*Search page*/
+
+.searchBtn {
+    float: right;
+}
+
+#navbar_search_bar {
+    font-size: 16px;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid #ddd;
+    margin-bottom: var(--margin);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 26px);
+    outline: none;
+    border-radius: 3px;
+}
+
+#navbar_search_bar:focus {
+    background-color: var(--chartblue);
 }
