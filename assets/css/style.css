@@ -245,6 +245,12 @@ hr {
     clear: both;
 }
 
+.row_after:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*Homepage fonts*/
 .home_image {
     width: 100%;
@@ -749,4 +755,11 @@ footer a:hover {
     color: grey;
     font-size: 70%;
     font-family: var(--accentfont);
+}
+
+.chart_js_chart_container {
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 100%;
 }
