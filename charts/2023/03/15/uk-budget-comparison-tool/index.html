@@ -11,18 +11,18 @@
 
 <body>
     <div class="chart_js_chart_container">
-        <canvas id="myChart"></canvas>
+        <canvas id="budget_comparison_tool_mar23_desktop"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
-        const ctx = document.getElementById('myChart');
+        const ctx_d = document.getElementById('budget_comparison_tool_mar23_desktop');
 
         Chart.defaults.font.size = 20;
         Chart.defaults.font.family = "'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif";
 
-        new Chart(ctx, {
+        new Chart(ctx_d, {
             type: 'scatter',
             data: {
                 labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -92,7 +92,25 @@
                         display: true,
                         min: -300,
                         max: 300,
-
+                        position: 'center',
+                        grid: {
+                            color: '#EAF3FF',
+                            lineWidth: 2.5,
+                            tickColor: 'black',
+                        },
+                        border: {
+                            color: 'black',
+                            width: 2.5,
+                        },
+                        ticks: {
+                            callback: function (value, index) {
+                                if (value === 0) return '';
+                                else return value;
+                            },
+                            font: {
+                                color: '#595959',
+                            },
+                        },
                     },
                 },
                 elements: {
@@ -108,4 +126,129 @@
             }
         });
     </script>
+
+
+
+
+
+
+<div class="chart_js_chart_container">
+    <canvas id="budget_comparison_tool_mar23_mobile"></canvas>
+</div>
+
+<script>
+    const ctx_m = document.getElementById('budget_comparison_tool_mar23_mobile');
+
+    new Chart(ctx_m, {
+        type: 'scatter',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                data: [
+                    { x: 100, y: 100 },
+                    { x: 25, y: 35 },
+                    { x: 21, y: 20 },
+                    { x: 35, y: 28 },
+                    { x: 15, y: 10 },
+                    { x: 19, y: 30 },
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            aspectRatio: 1 / 1,
+            resizeDelay: 500,
+            plugins: {
+                legend: {
+                    display: false,
+                },
+                tooltip: {
+                    backgroundColor: '#EAF3FF',
+                    displayColors: false,
+                    caretSize: 0,
+                    caretPadding: 10,
+                    cornerRadius: 0,
+                    mode: "nearest",
+                    intersect: true,
+                    titleColor: '#404040',
+                    titleFont: {
+                        size: 30,
+                    },
+                    bodyColor: '#404040',
+                    bodyFont: {
+                        size: 30,
+                    },
+                    callbacks: {
+                        label: (context) => {
+                            return ['a: ' + context.raw.x, 'b: ' + context.raw.y];
+                        }
+                    }
+                },
+            },
+            scales: {
+                x: {
+                    display: true,
+                    min: -300,
+                    max: 300,
+                    position: 'center',
+                    grid: {
+                        color: '#EAF3FF',
+                        lineWidth: 3.5,
+                        tickColor: 'black',
+                    },
+                    border: {
+                        color: 'black',
+                        width: 3.5,
+                    },
+                    ticks: {
+                        callback: function (value, index) {
+                            if (value === 0) return '';
+                            else return value;
+                        },
+                        font: {
+                            color: '#595959',
+                            size: 30,
+                        },
+                    },
+                },
+                y: {
+                    display: true,
+                    min: -300,
+                    max: 300,
+                    position: 'center',
+                    grid: {
+                        color: '#EAF3FF',
+                        lineWidth: 3.5,
+                        tickColor: 'black',
+                    },
+                    border: {
+                        color: 'black',
+                        width: 3.5,
+                    },
+                    ticks: {
+                        callback: function (value, index) {
+                            if (value === 0) return '';
+                            else return value;
+                        },
+                        font: {
+                            color: '#595959',
+                            size: 30,
+                        },
+                    },
+                },
+            },
+            elements: {
+                point: {
+                    radius: 8,
+                    hoverRadius: 8,
+                    backgroundColor: '#4472C4',
+                    hoverBackgroundColor: '#4472C4',
+                    borderColor: '#4472C4',
+                    hoverBorderColor: 'black',
+                }
+            },
+        }
+    });
+</script>
 </body>
