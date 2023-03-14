@@ -1,0 +1,111 @@
+<head>
+    <style>
+        .chart_js_chart_container {
+            position: relative;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chart_js_chart_container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        Chart.defaults.font.size = 20;
+        Chart.defaults.font.family = "'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif";
+
+        new Chart(ctx, {
+            type: 'scatter',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    data: [
+                        { x: 100, y: 100 },
+                        { x: 25, y: 35 },
+                        { x: 21, y: 20 },
+                        { x: 35, y: 28 },
+                        { x: 15, y: 10 },
+                        { x: 19, y: 30 },
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                aspectRatio: 1 / 1,
+                resizeDelay: 500,
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        backgroundColor: '#EAF3FF',
+                        displayColors: false,
+                        caretSize: 0,
+                        caretPadding: 10,
+                        cornerRadius: 0,
+                        mode: "nearest",
+                        intersect: true,
+                        titleColor: '#404040',
+                        bodyColor: '#404040',
+                        callbacks: {
+                            label: (context) => {
+                                return ['a: ' + context.raw.x, 'b: ' + context.raw.y];
+                            }
+                        }
+                    },
+                },
+                scales: {
+                    x: {
+                        display: true,
+                        min: -300,
+                        max: 300,
+                        position: 'center',
+                        grid: {
+                            color: '#EAF3FF',
+                            lineWidth: 2.5,
+                            tickColor: 'black',
+                        },
+                        border: {
+                            color: 'black',
+                            width: 2.5,
+                        },
+                        ticks: {
+                            callback: function (value, index) {
+                                if (value === 0) return '';
+                                else return value;
+                            },
+                            font: {
+                                color: '#595959',
+                            },
+                        },
+                    },
+                    y: {
+                        display: true,
+                        min: -300,
+                        max: 300,
+
+                    },
+                },
+                elements: {
+                    point: {
+                        radius: 7,
+                        hoverRadius: 7,
+                        backgroundColor: '#4472C4',
+                        hoverBackgroundColor: '#4472C4',
+                        borderColor: '#4472C4',
+                        hoverBorderColor: 'black',
+                    }
+                },
+            }
+        });
+    </script>
+</body>
