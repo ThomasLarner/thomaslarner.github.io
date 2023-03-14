@@ -431,8 +431,9 @@ hr {
 
 .blog_image_float_left {
     float: left;
-    width: calc(50% - 10px);
+    width: calc(400px - 10px);
     margin-right: 20px;
+    margin-bottom: 24px;
 }
 
 @media screen and (max-width: 900px) {
