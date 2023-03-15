@@ -23,32 +23,42 @@
 
 body {
     font-size: 24px;
-    margin: 0 auto !important; 
+    margin: 0 auto !important;
 }
 
 /* max-width 1500px settings*/
 
 @media screen and (min-width: 1570px) {
-    .header_text, .legal, .home_maxwidth {
+
+    .header_text,
+    .legal,
+    .home_maxwidth {
         max-width: 1500px;
-        margin: 0 auto !important; 
-	    float: none !important;
+        margin: 0 auto !important;
+        float: none !important;
     }
 }
 
 @media screen and (min-width: 1570px) {
-    .ec_cards, .uc_cards, .home_maxwidth {
+
+    .ec_cards,
+    .uc_cards,
+    .home_maxwidth {
         max-width: 1570px;
-        margin: 35px auto !important; 
-	    float: none !important;
+        margin: 35px auto !important;
+        float: none !important;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    .mainbody, .blog_div, .full_width_chart_div, .blog_header_div {
+
+    .mainbody,
+    .blog_div,
+    .full_width_chart_div,
+    .blog_header_div {
         max-width: 1500px;
-        margin: 0 auto !important; 
-	    float: none !important;
+        margin: 0 auto !important;
+        float: none !important;
     }
 }
 
@@ -245,7 +255,7 @@ hr {
     clear: both;
 }
 
-.row_after:after{
+.row_after:after {
     content: "";
     display: table;
     clear: both;
@@ -483,7 +493,7 @@ hr {
     margin-right: var(--margin);
 }
 
-.read_more h3{
+.read_more h3 {
     margin-top: 1rem;
 }
 
@@ -627,10 +637,10 @@ hr {
 .cookiebar {
     background-color: var(--darkgrey);
     margin-bottom: 0px;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .cookiebar p {
@@ -717,6 +727,7 @@ footer a:hover {
     margin-bottom: -.5em;
     font-weight: bold;
 }
+
 /*Footer End*/
 
 .home_read_more_link {
@@ -810,22 +821,41 @@ footer a:hover {
 
 @media screen and (max-width: 599px) {
     .chart_key_explain {
-        font-size: 0.9rem!important;
+        font-size: 0.9rem !important;
     }
+
     .chart_source {
-        font-size: 1rem!important;
+        font-size: 1rem !important;
     }
+
     .chart_thomaslarnercouk {
-        font-size: 1rem!important;
+        font-size: 1rem !important;
     }
+
     .chart_title {
-        font-size: 1.7rem!important;
+        font-size: 1.7rem !important;
         font-weight: bold;
         margin-top: 15px;
         margin-bottom: 15px;
     }
+
     .chart_subtitle {
-        font-size: 1.2rem!important;
-        line-height: 1.1rem;
+        font-size: 1.2rem !important;
+        line-height: 1.5rem;
     }
+}
+
+.budget_box1 {
+    margin: var(--margin);
+    margin-bottom: calc((var(--margin)) + 2rem);
+    height: fit-content;
+    padding: 20px;
+    background-color: var(--chartblue);
+    border: 2px solid rgb(221, 235, 255);
+}
+
+.budget_box1:hover h3 {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
 }
