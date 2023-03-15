@@ -757,9 +757,75 @@ footer a:hover {
     font-family: var(--accentfont);
 }
 
+/*Chart elements*/
+
 .chart_js_chart_container {
     position: relative;
     margin: auto;
     height: 100%;
     width: 100%;
+}
+
+.chart_key_explain {
+    font-family: var(--accentfont);
+    color: #595959;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: -0.5em;
+    line-height: 1.2rem;
+}
+
+.chart_source {
+    font-family: var(--accentfont);
+    color: #595959;
+    text-align: left;
+    font-size: 1.3rem;
+    margin-top: 1em;
+}
+
+.chart_thomaslarnercouk {
+    color: #595959;
+    text-align: right;
+    font-size: 1.3rem;
+    margin-top: 0px;
+}
+
+.chart_title {
+    font-family: var(--accentfont);
+    color: black;
+    text-align: left;
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.chart_subtitle {
+    font-family: var(--accentfont);
+    color: #595959;
+    text-align: left;
+    font-size: 1.8rem;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 599px) {
+    .chart_key_explain {
+        font-size: 0.9rem!important;
+    }
+    .chart_source {
+        font-size: 1rem!important;
+    }
+    .chart_thomaslarnercouk {
+        font-size: 1rem!important;
+    }
+    .chart_title {
+        font-size: 1.7rem!important;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .chart_subtitle {
+        font-size: 1.2rem!important;
+        line-height: 1.1rem;
+    }
 }
