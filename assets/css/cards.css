@@ -260,7 +260,7 @@
     display: none;
 }
 
-.more_cards div.card#uc {
+.more_cards div.card#a {
     display: none;
 }
 
@@ -325,7 +325,7 @@
     margin-top: 35px;
 }
 
-.ec_cards div.card#uc {
+.ec_cards div.card#a {
     display: none;
 }
 
@@ -351,7 +351,7 @@
     display: none;
 }
 
-.ch_cards div.card#uc {
+.ch_cards div.card#a {
     display: none;
 }
 
