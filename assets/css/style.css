@@ -845,17 +845,6 @@ footer a:hover {
     }
 }
 
-.budget_box1 {
-    margin: var(--margin);
-    margin-bottom: calc((var(--margin)) + 2rem);
-    height: fit-content;
-    padding: 20px;
-    background-color: var(--chartblue);
-    border: 2px solid rgb(221, 235, 255);
-}
-
-.budget_box1:hover h3 {
-    color: var(--accent);
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
+.blog_sub_heading {
+    font-weight: bold;
 }
