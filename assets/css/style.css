@@ -271,6 +271,7 @@ hr {
     font-weight: 100;
     text-align: left;
     color: black;
+    margin-bottom: .75em;
 }
 
 .home_title:hover {
