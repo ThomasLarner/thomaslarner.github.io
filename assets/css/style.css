@@ -849,3 +849,29 @@ footer a:hover {
 .blog_sub_heading {
     font-weight: bold;
 }
+
+.four_o_four_links {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: grey;
+    font-size: 70%;
+    font-family: var(--accentfont);
+}
+
+.four_o_four_links .colour_link {
+    text-decoration: none;
+    border-bottom: 3px solid var(--linkblue);
+    color: grey;
+}
+
+.four_o_four_links .colour_link:hover {
+    color: var(--linkblue);
+}
+
+.full_width_grey {
+    width: 100%;
+    background-color: var(--backgroundgrey);
+    text-align: center;
+    padding-top: var(--margin);
+    padding-bottom: var(--margin);
+}
