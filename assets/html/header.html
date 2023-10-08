@@ -2,28 +2,32 @@
     <div class="cookiebar">
         <p>This website uses cookies. To learn more, <a href="/notices/cookies/">click here</a></p>
     </div>
-    <div class="header">
-        <div class="header_content">
-            <div class="header_text">
-                <div style="float: right;">
-                    <button onclick="menuFunction()" id="menuBtn" class="menu_button">
-                        <img src="/assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu_open_btn" alt="menu" width="24px"
-                            height="24px">
-                        <img src="/assets/icons/close_FILL0_wght400_GRAD0_opsz48.svg" id="menu_close_btn" alt="menu" width="24px"
-                            height="24px">
-                    </button>
-                    <span class="header_text_disappear">
-                        <a href="/search"
-                            style="text-decoration: none; color: white; margin-right: 20px; margin-top: 15px; margin-bottom: 15px;">
-                            <img src="/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="menu" width="24px"
+    <header>
+        <div class="header_top">
+            <div class="header_content">
+                    <div class="header_logo">
+                        <a href="/" style="text-decoration: none; color: white;">
+                            Thomas Larner
+                        </a>
+                    </div>
+                <div class="header_right">
+                    <div class="header_menu_btn">
+                        <span class="header_text_disappear">
+                        <a href="/search" style="text-decoration: none; color: white;">
+                            <img src="/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search" width="24px"
                                 height="24px">
                         </a>
                     </span>
+                    </div>
+                    <div class="header_menu_btn">
+                        <button onclick="menuFunction()" id="menuBtn" class="menu_button">
+                            <img src="/assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu_open_btn" alt="menu"
+                                width="24px" height="24px">
+                            <img src="/assets/icons/close_FILL0_wght400_GRAD0_opsz48.svg" id="menu_close_btn" alt="menu"
+                                width="24px" height="24px">
+                        </button>
+                    </div>
                 </div>
-                <a href="/" style="text-decoration: none; color: white;">
-                    Thomas Larner
-                </a>
-
             </div>
         </div>
         <div class="header_bottom">
@@ -42,10 +46,6 @@
                     <a href="/economics-column" class="header_bottom_text">Economics Column</a>
                     <br>
                     <a href="/research" class="header_bottom_text">Research</a>
-                    <!--
-                    <a style="display: block; margin-bottom: -1.4em; margin-right: 7.6em;">🆕</a>
-                    <a href="/notebook" class="header_bottom_text">The Notebook</a>
-                    <br>-->
                     <span class="header_text_appear">
                         <br>
                         <a href="/search">
@@ -57,5 +57,5 @@
                 </span>
             </p>
         </div>
-    </div>
+    </header>
 </body>

@@ -13,6 +13,8 @@
     --margin: 35px;
     --bordercolor: #E0E3EB;
     --linkblue: #3b71c9;
+    --header-height: 137.6px;
+    --maxwidth: 1500px;
 }
 
 @media screen and (max-width: 450px) {
@@ -340,29 +342,6 @@ hr {
     color: var(--linkblue);
 }
 
-#menu {
-    display: none;
-}
-
-.menu_button {
-    float: right;
-    border: none;
-    padding: 0px;
-    background-color: var(--darkpurple);
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 2.5rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#menu_close_btn {
-    display: none;
-}
-
 .blog_div {
     width: 100%;
     margin-bottom: 35px;
@@ -576,35 +555,83 @@ hr {
 }
 
 /*Header*/
-.header {
-    background: var(--darkpurple);
-    margin-top: 20px;
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header_top {
+    background-color: var(--darkpurple);
+}
+
+.header_bottom {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-family: var(--accentfont);
+    border-bottom: 2px solid var(--bordercolor);
+    background-color: var(--accent);
+}
+
+.header_bottom_text {
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    line-height: 1.5em;
 }
 
 .header_content {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin: 0 auto !important;
+    padding: 20px var(--margin);
+    max-width: var(--maxwidth);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
 
-.header_text {
-    margin-left: var(--margin);
-    margin-right: var(--margin);
+.header_logo {
+    display: block;
+    height: var(--header-logo-height);
     font-weight: 500;
     font-style: normal;
     letter-spacing: 0em;
     text-transform: none;
-    line-height: 1.4em;
     font-size: 2.5rem;
     color: white;
     text-decoration: none;
 }
 
-.header_bottom {
-    background: var(--accent);
-    padding-top: 1px;
-    padding-bottom: 1px;
-    font-family: var(--accentfont)
+.header_right {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.header_menu_btn {
+    height: 24px;
+    width: 24px;
+    margin: auto;
+}
+
+.menu_button {
+    float: right;
+    border: none;
+    padding: 0px;
+    background-color: var(--darkpurple);
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu_close_btn {
+    display: none;
+}
+
+#menu {
+    display: none;
 }
 
 .header_bottom_text {
@@ -635,25 +662,22 @@ hr {
     }
 }
 
+/*Cookie bar*/
 .cookiebar {
     background-color: var(--darkgrey);
     margin-bottom: 0px;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
 }
 
 .cookiebar p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-left: var(--margin);
-    margin-right: var(--margin);
+    margin: 0 var(--margin);
+    padding: 3px 0px;
     color: var(--backgroundgrey);
-    font-size: .55em;
-    font-family: var(--accentfont);
+    font-size: 12px;
+    font-family: Roboto;
     text-align: center;
 }
 
