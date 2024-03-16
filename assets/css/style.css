@@ -677,7 +677,7 @@ header {
     padding: 3px 0px;
     color: var(--backgroundgrey);
     font-size: 12px;
-    font-family: Roboto;
+    font-family: var(--accentfont);
     text-align: center;
 }
 
@@ -898,4 +898,10 @@ footer a:hover {
     text-align: center;
     padding-top: var(--margin);
     padding-bottom: var(--margin);
+}
+
+.blog_heading_2 {
+    font-family: var(--accentfont);
+    font-weight: bold;
+    color: var(--darkgrey);
 }
