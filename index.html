@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-<head>
+<head><!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSS7EYMMMH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,7 @@
         gtag('js', new Date());
 
         gtag('config', 'G-GSS7EYMMMH');
-    </script>
+    </script>-->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/cards.css" />
     <link rel="stylesheet" href="/assets/css/bm_style.css">
@@ -56,7 +56,7 @@
 
         <div class="more_cards">
             <div class="cards_margin">
-                <div class="home_latest" id="home_latest_bg">
+                <div class="home_latest" id="home_latest_bg" onclick="location.href='https://brieflymacro.com/today/';">
                     <div class="home_latest_content">
                         <p class="home_latest_type">Latest</p>
                         <h3 id="latest_title"></h3>
@@ -71,17 +71,18 @@
         </div>
 
         <div class="more_cards">
-            <div class="cards_margin">
+            <div class="cards_margin" style="padding-bottom: 25px;">
                 <iframe id="bm_frame_one" width="100%" height="216px" scrolling="no" frameborder="0"
                     src="https://brieflymacro.com/api/external-embedding/morning-macro-briefing/url=thomaslarner.co.uk"></iframe>
             </div>
         </div>
 
-        <div class="more_cards" style="margin-top: 25px;">
-            <div class="cards_margin">
-                <h2>Opinion</h2>
-            </div>
-        </div>
+        <a href="https://brieflymacro.com/morning-macro-briefing/" class="home_read_more_link">
+            <p class="home_read_more_link">Read more daily macro briefings here
+                <img src="/assets/icons/arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg" alt="Read more" width="24px"
+                    height="24px" style="margin-bottom: -5px;">
+            </p>
+        </a>
 
         <!--Articles-->
         <div class="featured_cards">

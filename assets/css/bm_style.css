@@ -25,6 +25,7 @@
     background-position: 50% 50%;
     padding: var(--margin);
     border-top: var(--midblue) solid 5px;
+    cursor: pointer;
 }
 
 .home_latest_content {
